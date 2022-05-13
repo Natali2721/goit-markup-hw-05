@@ -103,6 +103,22 @@ html {
     color: var(--accent-color);
 }
 
+.item .link.current {
+    position: relative;
+}
+.item .link.current::after {
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    bottom: -1px;
+    left: 0;;
+    height: 4px;
+    width: 100%;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+}
+
+
 .contact-header {
    display: flex;
    margin-left: auto;
@@ -128,7 +144,7 @@ html {
     letter-spacing: 0.02em;
 }
  .header-icon {
-     margin-right: 10px;
+    margin-right: 10px;
      fill: currentColor;
  }
 
