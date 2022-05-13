@@ -485,7 +485,7 @@ html {
     line-height: 1.14;
     text-transform: uppercase;
 
-    color: var(--primary-background-color);
+    color: var(--primary-white-color);
 
     margin-bottom: 20px;
 }
@@ -493,15 +493,10 @@ html {
     display: flex;
 }
 .footer-social-item {
-    width: 44px;
-    height: 44px;
-    background: rgba(255, 255, 255, 0.1);
-    
-    border-radius: 50px; 
-    margin-right: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 10px;
 }
 
 .footer-social-item:last-child {
@@ -509,8 +504,9 @@ html {
 }
 
 .social-footer-link {
-    width: 100%;
-    height: 100%;
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -524,6 +520,28 @@ html {
 
 .icon-social-footer {
     fill: var(--primary-white-color);
+}
+
+.backdrop
+.modal
+.is-hidden {
+    visibility: ;
+    opacity: ;
+    pointer-events: ;
+}
+
+.modal-btn-close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.icon-modal-close {
+    fill: #000000;
 }
 
 .filter-list {
