@@ -52,8 +52,7 @@ html {
     /* outline: 2px solid #2196f3;*/
 }
 
-.btn,
-.hero-btn {
+.btn, .hero-btn, .modal-btn-close {
     cursor: pointer;
 }
 
@@ -292,6 +291,30 @@ html {
 .service-item:not(:last-child) {
     margin-right: 30px;
 }
+.service-item {
+    position: relative;
+    flex-basis: calc((100% - 60px)/3);
+}
+.service-label {
+    position: absolute;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+    background-color: rgba(47, 48, 58, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.service-txt {
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 1.14;
+   text-align: center;
+
+   text-transform: uppercase;
+
+   color: var(--primary-white-color);
+}
 
 .team {
     background-color: var(--third-background-color);
@@ -522,13 +545,13 @@ html {
     fill: var(--primary-white-color);
 }
 
-.backdrop
+/*.backdrop
 .modal
 .is-hidden {
     visibility: ;
     opacity: ;
     pointer-events: ;
-}
+}*/
 
 .modal-btn-close {
     display: flex;
