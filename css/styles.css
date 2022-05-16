@@ -82,7 +82,7 @@ html {
     color: var(--accent-color);
 }
     
-.item .link {
+.link-nav {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -99,16 +99,16 @@ html {
     margin-right: 50px;
 }
 
-.item .link:hover,
-.item .link:focus,
-.item .link.current {
+.link-nav:hover,
+.link-nav:focus,
+.link-nav.current {
     color: var(--accent-color);
 }
 
-.item .link.current {
+.link-nav.current {
     position: relative;
 }
-.item .link.current::after {
+.link-nav.current::after {
     content: " ";
     display: inline-block;
     position: absolute;
@@ -127,17 +127,12 @@ html {
    align-items: center;
 }
 
-.contact.link.tel,
-.contact.link.mail {
+.link.tel,
+.link.mail {
     display: flex;
     align-items: center;
-}
-
-.contact-header .item + .item {
-    margin-left: 50px;
-}
-
-.contact {
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: var(--primary-text-color);
     font-style: normal;
     font-weight: 500;
@@ -147,7 +142,12 @@ html {
 
     transition: color 250ms var(--timing-function);
 }
- .header-icon {
+
+.contact-header .item + .item {
+    margin-left: 50px;
+}
+
+ .contact-icon {
     margin-right: 10px;
     fill: currentColor;
 
@@ -165,17 +165,17 @@ html {
 }
 
 .hero {
-    background: var(--second-background-color);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)) , url(../images/bgi-hero.jpg);
-    text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     margin-right: auto;
     margin-left: auto;
     max-width: 1600px;
+    text-align: center;
+    background: var(--second-background-color);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)) , url(../images/bgi-hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
 }
 
 .hero-title {
